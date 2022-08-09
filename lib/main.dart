@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_hooks_tut/home_page.dart';
+import 'package:flutter_hooks_tut/text_editing_controllar.dart';
 import 'package:flutter_hooks_tut/use_stream.dart';
 
 void main() {
@@ -11,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Hooks',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const UseStreamPage(),
+      home: const HomePage(),
     );
   }
 }
